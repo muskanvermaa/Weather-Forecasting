@@ -1,4 +1,4 @@
-const apiKey = "907326d3292e63231b91284ce68c4b90"; // Replace with your key
+const apiKey = "63c3dff54ce91ac01d9cd0bf322bbcf8"; // Replace with your key
 
 const iconMap = {
     "Clear":  "https://cdn-icons-png.flaticon.com/128/1163/1163661.png",

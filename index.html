@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="weather-hero">
+        <div class="main-row">
+            <img id="main-icon" class="main-icon" src="" alt="Weather">
+            <div>
+                <div class="city" id="city"></div>
+                <div class="desc" id="desc"></div>
+                <div class="temp-main" id="temp"></div>
+                <div>Feels like: <span id="feels"></span></div>
+                <div class="extras">
+                    <span id="humid"></span> | 
+                    <span id="wind"></span> | 
+                    <span id="vis"></span>
+                </div>
+                <div class="sun-times">
+                    <span>Sunrise: <span id="sunrise"></span></span> 
+                    <span>Sunset: <span id="sunset"></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="accent-bar"></div>
+<div class="tip-card" id="weather-tip"></div>
+<!-- NEW UTILITY BAR -->
+<div class="utility-bar">
+    <button class="utility-btn" title="Refresh" onclick="getWeather()">🔄 Refresh</button>
+    <span class="utility-divider"></span>
+    <button class="utility-btn" id="unit-toggle" title="Switch Units">°C/°F</button>
+</div>
+<!-- End replacement -->
+<div class="search-bar">
+    <input type="text" id="city-input" placeholder="Enter city name...">
+    <button onclick="getWeather()">🔍 Search</button>
+    <button onclick="getLocation()">📍 Location</button>
+    <button id="forecast-btn">5-Day Forecast</button>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

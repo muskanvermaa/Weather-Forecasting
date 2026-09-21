@@ -1,0 +1,15 @@
+# Ignore environment variable files
+.env
+
+# Ignore node modules folder (if using Node.js)
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore any API keys or config files containing secrets
+config.js
